@@ -12,6 +12,7 @@ def convert_points_to_letter(point):
     Returns:
     Letter grade.
     """
+    
     if point >= 94:
         grade = 'A'
     elif point >= 87 and point < 94:
@@ -75,7 +76,7 @@ def calculate_letter_grade(assignments: list, final_project: int, midterm: int, 
 if __name__ == "__main__":
 
     # example
-    grade = calculate_letter_grade(
+    grade = grader.calculate_letter_grade(
         assignments=[100, 100, 100, 90, 60, 100],
         final_project=90,
         midterm=90,
